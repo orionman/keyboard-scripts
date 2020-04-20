@@ -2,7 +2,7 @@ local ori = {}
 ori.on = {}
 
 
-ori.on.gstext = { -- MUST put each character in manually as done belo
+ori.on.gstext = { -- MUST put each character in manually as done below
 	"e",
 	"n",
 	"d"
