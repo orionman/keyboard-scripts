@@ -14,4 +14,4 @@ G6 - Input Text That Was Given In Configuration (end by default)
 
 G5 - Abort Current Macro
 
-G4 - Outputs a Log Message of the runtime of the script, pracitcally useless
+G4 - Outputs a Log Message of the runtime of the script, practically useless
