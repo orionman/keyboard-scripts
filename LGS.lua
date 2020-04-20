@@ -1,4 +1,4 @@
-ori = {}
+local ori = {}
 ori.on = {}
 
 
@@ -14,32 +14,14 @@ ori.on.gstext = { -- MUST put each character in manually as done belo
 
 
 local function moveup()
-	Sleep(1)				MoveMouseWheel(9999)
-	Sleep(1)				MoveMouseWheel(9999)
-	Sleep(1)				MoveMouseWheel(9999)
-	Sleep(1)				MoveMouseWheel(9999)
-	Sleep(1)				MoveMouseWheel(9999)
-	Sleep(1)				MoveMouseWheel(9999)
-	Sleep(1)				MoveMouseWheel(9999)
-	Sleep(1)				MoveMouseWheel(9999)
-	Sleep(1)				MoveMouseWheel(9999)
-	Sleep(1)				MoveMouseWheel(9999)
-	Sleep(1)				MoveMouseWheel(9999)
-	Sleep(1)
+	for i=0, 100 do
+		Sleep(1)				MoveMouseWheel(i)	
+	end
 end
 local function movedown()
-	Sleep(1)				MoveMouseWheel(-9999)
-	Sleep(1)				MoveMouseWheel(-9999)
-	Sleep(1)				MoveMouseWheel(-9999)
-	Sleep(1)				MoveMouseWheel(-9999)
-	Sleep(1)				MoveMouseWheel(-9999)
-	Sleep(1)				MoveMouseWheel(-9999)
-	Sleep(1)				MoveMouseWheel(-9999)
-	Sleep(1)				MoveMouseWheel(-9999)
-	Sleep(1)				MoveMouseWheel(-9999)
-	Sleep(1)				MoveMouseWheel(-9999)
-	Sleep(1)				MoveMouseWheel(-9999)
-	Sleep(1)
+	for i=0, 100 do
+		(1)				MoveMouseWheel(-i)	
+	end
 end
 
 
@@ -68,4 +50,3 @@ function OnEvent(event, arg, ms)
 			OutputLogMessage(GetRunningTime())
 		end
 	end
-end
